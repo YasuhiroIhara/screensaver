@@ -7,12 +7,12 @@ Demo: https://sinky.github.io/html5-screensaver-node-webkit/demo.html
 ## Usage
 Download [node-webkit](http://nwjs.io/) and rename the folder to nwjs and move it into the same folder where the ``screen.nw`` folder is located. 
 
-Run ``.\nwjs\nw.exe screen.nw`` from within this directory to test the screensaver.
-
 Folder structure:  
 |- screen.nw/  
 |- nwjs/
 
+Right click on runscreesaver.scr, then install.
+Run command `.\nwjs\nw.exe .\`
 
 ## Windows Screensaver
 Use "runscreensaver" as an Windows Screensaver. "runscreensaver" can be configured to run a command as screensaver.
