@@ -6,64 +6,10 @@
     <style>
       body { margin: 0; }
       canvas { width: 100%; height: 100% }
-       .text{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-           -webkit-transform: translate(-50%, -50%);
-           text-align:center;
-           width: 100vw; /* 100% of the viewport width */
-           box-sizing: border-box; 
-       }
-       .text p{
-         font-size:80px;
-         font-weight:bold;
-         color:white;
-       }
-       .text-with-blue-stroke {
-        color: white;
-        -webkit-text-stroke: 2px blue; /* 縁取りの太さと色を指定 */
-       }
     </style>
   </head>
-  <body oncontextmenu="return false;">
+  <body>
     <script src="main.js"></script>
-    <div class="text">
-      <p class="text-with-blue-stroke"> スクリーンセーバーを作りました</p>
-      <p class="text-with-blue-stroke"> 作りたかったものは<br>C言語とOpenGLで作られた<br>Really Slick Screensavers</p>
-      <p class="text-with-blue-stroke"> JavaScriptとWebGLで作りました</p>
-      <p class="text-with-blue-stroke"> 取り掛かりの簡単なコードは、<br>コピペだけで動くものが出ました </p>
-      <p class="text-with-blue-stroke"> コピペミスなどは瞬時に<br>バグを見つけてくれました<br>ありがたい</p>
-      <p class="text-with-blue-stroke"> ファイルが増えてくると<br>急に難易度が上がります<br>知識と根性が必要</p>
-      <p class="text-with-blue-stroke"> 視覚効果に凝ってくると<br>さらに専門知識が必要</p>
-      <p class="text-with-blue-stroke"> 「球体をもっと大きくしたい」と問い<br>「このパラメータを大きく」との回答<br>検索よりはるかに楽です</p>
-      <p class="text-with-blue-stroke"> GPUで実行するコードにも<br>対応できるのがすごい</p>
-      <p class="text-with-blue-stroke"> バグって画面が真っ白になっても<br>分からないとは言わない<br>頼りになります</p>
-      <p class="text-with-blue-stroke"> 「これで直るはずです」との解決策でも<br>直らないことは多々ありました</p>
-      <p class="text-with-blue-stroke"> スクリーンセーバー化する方法は<br>情報が古くて諦めました</p>
-      <p class="text-with-blue-stroke"> 方法を問うと抽象的な回答が多く<br>具体的な専門情報に強い感じ</p>
-      <p class="text-with-blue-stroke"> まとめ<br>・かなり使える　　　　　　　　<br>・ケアレスミスは瞬時に解決　　<br>・ファイルが増えてくると難しい<br>・古い情報しかない時は諦める　 </p>
-      <p class="text-with-blue-stroke"> おしまい </p>
-    </div>
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  var paragraphs = document.querySelectorAll('.text p');
-  var currentIndex = 0;
-  for (var i = 0; i < paragraphs.length; i++) {
-    paragraphs[i].style.display = 'none';
-  }
-  paragraphs[currentIndex].style.display = 'block';
-  document.body.addEventListener('mousedown', function(event) {
-    paragraphs[currentIndex].style.display = 'none';
-    if (event.button === 0) { // Left click
-      currentIndex = (currentIndex + 1) % paragraphs.length;
-    } else if (event.button === 2) { // Right click
-      currentIndex = (currentIndex - 1 + paragraphs.length) % paragraphs.length;
-    }
-    paragraphs[currentIndex].style.display = 'block';
-  });
-});
-    </script>
   </body>
 </html>
 
